@@ -1,4 +1,4 @@
-# Smart4car_test 
+# Smart4car_Linea  
 
 Autor: Jordi Rodríguez  
   
@@ -20,12 +20,9 @@ https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
 https://github.com/arduino-libraries/Servo  
 
 
-Este código realiza las siguientes funciones simples:  
-- Medición de ángulo de giro del servo  
-- Medición de 1 sensores de distancia  
+Este código realiza las siguientes funciones simples:   
 - Lectura de 4 sensores de línea  
-- Lectura de 2 encoders en motores traseros  
-- Prueba de motores  
+- Actúa sobre los motores para seguir la línea negra  
   
   
 ![Imagen Smart4car acabado](Smart4car.jpeg)  
