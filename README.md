@@ -2,7 +2,7 @@
 
 Autor: Jordi Rodríguez  
   
-Práctica de programación ordenada en Arduino utilizando pestañas   
+Práctica de programación de Clases y Objetos en Arduino  
 Crearemos un vehículo de 4 ruedas con el material especificado  
 Para la programación usaremos la plataforma Arduino IDE:  
 
@@ -10,19 +10,19 @@ https://www.arduino.cc/en/software
 
 Se han incluido las siguientes librerías:  
 
-- NewPing  
-https://bitbucket.org/teckel12/arduino-new-ping/src/master/  
-
 - LiquidCrystal I2C  
 https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library  
-
-- Servo (incluida en Arduino IDE)  
-https://github.com/arduino-libraries/Servo  
 
 
 Este código realiza las siguientes funciones simples:   
 - Lectura de 4 sensores de línea  
 - Actúa sobre los motores para seguir la línea negra  
+
+En este caso no usaremos:  
+- El sensor de distancia  
+- El servo  
+- Los encoders  
+- Control PID  
   
   
 ![Imagen Smart4car acabado](Smart4car.jpeg)  
