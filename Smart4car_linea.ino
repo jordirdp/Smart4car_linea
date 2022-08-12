@@ -21,7 +21,7 @@ void setup() {
   lcd.setCursor (0,0);
   lcd.print("****Smart4car****");
   lcd.setCursor (0,1);
-  lcd.print("---Modo Test----");
+  lcd.print("---Modo Linea---");
   delay (TiempoEspera);
 
   // Inicia sensores de línea
