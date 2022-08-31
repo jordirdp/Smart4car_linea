@@ -9,3 +9,8 @@ boolean Sensor_LL;
 boolean Sensor_L;
 boolean Sensor_R;
 boolean Sensor_RR;
+
+// Variables
+const int waitTime = 1000;
+
+

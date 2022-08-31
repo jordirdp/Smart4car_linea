@@ -8,12 +8,12 @@
 // I2C_LCD_SCL = A5;
 
 // Driver Motores L298N
-const byte ENB = 5;
-const byte IN3 = 9;
-const byte IN4 = 10;
-const byte ENA = 6;
-const byte IN1 = 7;
-const byte IN2 = 8;
+const byte ENB_PIN = 5;
+const byte IN3_PIN = 9;
+const byte IN4_PIN = 10;
+const byte ENA_PIN = 6;
+const byte IN1_PIN = 7;
+const byte IN2_PIN = 8;
 
 // Sensores de línea
 const byte SENSOR_LL_PIN = 4;

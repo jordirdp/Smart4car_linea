@@ -13,16 +13,15 @@ Se han incluido las siguientes librerías:
 - LiquidCrystal I2C  
 https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library  
 
-
 Este código realiza las siguientes funciones simples:   
 - Lectura de 4 sensores de línea  
 - Actúa sobre los motores para seguir la línea negra  
 
-En este caso no usaremos:  
+En este caso, aunque esté montado, no usaremos:  
 - El sensor de distancia  
 - El servo  
 - Los encoders  
-- Control PID  
+- Ningún control PID  
   
   
 ![Imagen Smart4car acabado](Smart4car.jpeg)  

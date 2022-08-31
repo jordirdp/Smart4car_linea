@@ -11,6 +11,10 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd (0x27, 16, 2);
 
+// Define Motores
+#include "Smartcar_motores.h"
+Smartcar_motores Smart4car;
+
 
 void setup() {
 
@@ -22,7 +26,10 @@ void setup() {
   lcd.print("****Smart4car****");
   lcd.setCursor (0,1);
   lcd.print("---Modo Linea---");
-  delay (TiempoEspera);
+  delay (250);
+
+  // Inicia Motores
+  Smart4car.Init();
 
   // Inicia sensores de línea
   pinMode (SENSOR_LL_PIN, INPUT);
@@ -33,8 +40,15 @@ void setup() {
 }
 
 
-
 void loop() {
 
+  Smart4robot.Forward(120);
+  delay(waitTime);
+  Smart4robot.TurnLeft(120);
+  delay(waitTime);
+  Smart4robot.TurnRight(120);
+  delay(waitTime);
+  Smart4robot.Backward(120);
+  delay(waitTime);
 
 }
