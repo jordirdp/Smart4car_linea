@@ -6,19 +6,20 @@
 #define _Smartcar_L298N_h
 
 #include <Arduino.h>
+#include "Pinout.h"
 
 class Smartcar_L298N {
 
   public:
-    void Init (byte IN1_PIN, byte IN2_PIN, byte ENA_PIN);
+    void Init (int IN1_PIN, int IN2_PIN, int ENA_PIN);
     void Stop() const;
-    void Forward (byte speed) const;
-    void Backward (byte speed) const;
+    void Forward (int speed) const;
+    void Backward (int speed) const;
 
   private:
-    byte _IN1_PIN;
-    byte _IN2_PIN;
-    byte _ENA_PIN;
+    int _IN1_PIN;
+    int _IN2_PIN;
+    int _ENA_PIN;
 
 };
 

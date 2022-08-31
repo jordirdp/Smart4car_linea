@@ -37,18 +37,43 @@ void setup() {
   pinMode (SENSOR_R_PIN, INPUT);
   pinMode (SENSOR_RR_PIN, INPUT);
 
+  // Prepara LCD
+  lcd.clear();
+  lcd.setCursor (0,0);
+  lcd.print("---Modo Linea---");
+
 }
 
 
 void loop() {
 
-  Smart4robot.Forward(120);
-  delay(waitTime);
-  Smart4robot.TurnLeft(120);
-  delay(waitTime);
-  Smart4robot.TurnRight(120);
-  delay(waitTime);
-  Smart4robot.Backward(120);
-  delay(waitTime);
+  // Lectura sensores de línea
+  int Sensor_LL = digitalRead (SENSOR_LL_PIN);
+  int Sensor_L = digitalRead (SENSOR_L_PIN);
+  int Sensor_R = digitalRead (SENSOR_R_PIN);
+  int Sensor_RR = digitalRead (SENSOR_RR_PIN);
 
+  Smart4car.Forward(speed);
+
+  if (Sensor_LL == LOW) {
+    Smart4car.HardLeft (speed);
+    lcd.setCursor (0,1);
+    lcd.print(Sensor_LL);
+  }
+  if (Sensor_L == LOW) {
+    Smart4car.TurnLeft (speed);
+    lcd.setCursor (5,1);
+    lcd.print(Sensor_L);
+  }
+  if (Sensor_R == LOW) {
+    Smart4car.TurnRight (speed);
+    lcd.setCursor (10,1);
+    lcd.print(Sensor_R);
+  }
+  if (Sensor_RR == LOW) {
+    Smart4car.HardRight(speed);
+    lcd.setCursor (15,1);
+    lcd.print(Sensor_RR);
+  }
+  
 }

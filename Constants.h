@@ -4,13 +4,6 @@
 
 #pragma once
 
-// Sensores de línea TCRT5000
-boolean Sensor_LL;
-boolean Sensor_L;
-boolean Sensor_R;
-boolean Sensor_RR;
-
-// Variables
+// Constantes
 const int waitTime = 1000;
-
-
+const int speed = 120;
