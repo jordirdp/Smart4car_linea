@@ -38,6 +38,7 @@ En este caso, aunque esté montado, no usaremos:
 - 4 x Motores Arduino  
 - 2 x Encoders motores Arduino (alimentados a 3'3v)  
 - Protoboard  
+- Arduino UNO  
   
 
 ## Pines de conexion  
