@@ -1,35 +1,20 @@
 # Smart4car_Linea  
-
-Autor: Jordi Rodríguez  
+🔗Creado por [Jordi Rodriguez](https://github.com/jordirdp)  
   
-Práctica de programación de Clases y Objetos en Arduino  
-Crearemos un vehículo de 4 ruedas con el material especificado  
-Para la programación usaremos la plataforma Arduino IDE:  
+👨🏻‍💻Práctica de **programación de Clases y Objetos** en Arduino  
 
-https://www.arduino.cc/en/software  
-
-Se han incluido las siguientes librerías:  
-
-- LiquidCrystal I2C  
-https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library  
-
-Este código realiza las siguientes funciones simples:   
-- Lectura de 4 sensores de línea  
-- Actúa sobre los motores para seguir la línea negra  
-
-En este caso, aunque esté montado, no usaremos:  
-- El sensor de distancia  
-- El servo  
-- Los encoders  
-- Ningún control PID  
+<img src="/Images/Smart4car.jpeg" width="300"/>   
   
-  
-![Imagen Smart4car acabado](Smart4car.jpeg)  
+### Software  
+- Programado con [Arduino](https://www.arduino.cc/en/software)
+- Se han incluido las siguientes librerías:  
+-- [NewPing](https://bitbucket.org/teckel12/arduino-new-ping/src/master/)  
+-- [LiquidCrystal I2C](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)  
+- Este código realiza las siguientes funciones simples:  
+-- Lectura de 4 sensores de línea  
+-- Actúa sobre motores para seguir a línea negra  
 
-
-## Material utilizado  
-
-
+### Hardware  
 - 1 x HC-SR04 = Sensor ultrasonido de distancia  
 - 1 x SG90 = MicroServo 9g  
 - 4 x TCRT5000 = Sensor infrarrojo de proximidad  
@@ -40,26 +25,35 @@ En este caso, aunque esté montado, no usaremos:
 - Protoboard  
 - Arduino UNO  
   
+En este caso, aunque esté montado, no usaremos:  
+- El sensor de distancia  
+- El servo  
+- Los encoders  
+- Ningún control PID  
+  
+### Montaje  
+🔧 Conexiones a pines Arduino UNO:  
+- A00 = Servo frontal  
+- A01 = Sensor ultrasonido-Echo (HC-SR04)  
+- A02 = Sensor ultrasonido-Trigger (HC-SR04)  
+- A03 =   
+- A04 = I2C LCD (SDA)  
+- A05 = I2C LCD (SCL)  
+- D00 = (RX)  
+- D01 = (TX)  
+- D02 = (INT0) Encoder izquierdo  
+- D03-= (INT1) Encoder derecho  
+- D04 = Sensor línea izquierda extremo     
+- D05-= ENB motor izquierdo  
+- D06-= ENA motor derecho  
+- D07 = IN1 motor derecho  
+- D08 = IN2 motor derecho  
+- D09-= IN3 motor izquierdo  
+- D10-= IN4 motor izquierdo  
+- D11-= Sensor línea izquierda  
+- D12 = Sensor línea derecha   
+- D13 = Sensor línea derecha extremo  
 
-## Pines de conexion  
-
-A0 = Servo frontal  
-A1 = Sensor ultrasonido-Echo (HC-SR04)  
-A2 = Sensor ultrasonido-Trigger (HC-SR04)  
-A3 =   
-A4 = I2C LCD (SDA)  
-A5 = I2C LCD (SCL)  
-D0 = (RX)  
-D1 = (TX)  
-D2 = (INT0) Encoder izquierdo  
-D3-= (INT1) Encoder derecho  
-D4 = Sensor línea izquierda extremo     
-D5-= ENB motor izquierdo  
-D6-= ENA motor derecho  
-D7 = IN1 motor derecho  
-D8 = IN2 motor derecho  
-D9-= IN3 motor izquierdo  
-D10-= IN4 motor izquierdo  
-D11-= Sensor línea izquierda  
-D12 = Sensor línea derecha   
-D13 = Sensor línea derecha extremo  
+### Licencia  
+⚖️Todo el contenido distribuido bajo [licencia GPL-3.0](https://www.gnu.org/licenses/gpl-3.0), salvo indicación expresa.  
+Las referencias y librerías empleadas, estarán sujetas a sus propia licencia, y no se incluyen en este repositorio.  
